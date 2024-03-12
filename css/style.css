@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -114,7 +117,7 @@ input[type=checkbox] {
   }
 }
 
-/* footer */
+/* footer css */
 footer {
   background-color: #121315;
   color: #a7a7a7;
@@ -222,9 +225,8 @@ div.social {
   font-size: 0.9em;
   text-align: center;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   .row.primary {
     grid-template-columns: 1fr;
   }
-
 }
