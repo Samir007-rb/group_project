@@ -1,78 +1,289 @@
 /*========== Hero Section ==========*/
-.home__container, .about__container{
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
+.home__container,
+.about__container {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
 }
 
-.home__container{
-  height: calc(100vh - 3rem);
-  align-content: center;
+.home__data,
+.about__data,
+.about__initial,
+.contact__container,
+.contact__initial {
+    text-align: center;
 }
 
-.home__title{
-  font-size: 2.25rem;
-  color: #069C54;
-  margin-bottom: .5rem;
+.home__title {
+    font-size: 2.25rem;
+    color: #069c54;
+    margin-bottom: 0.5rem;
 }
 
-.home__subtitle{
-  font-size: 1.5rem;
-  color: #4f4e4e;
-  margin-bottom: 2rem;
+.home__subtitle {
+    font-size: 1.5rem;
+    color: #4f4e4e;
+    margin-bottom: 2rem;
 }
 
-.home__img{
-  /* width: 300px; */
-  width: 100%;
-  justify-self: center;
+.home__img {
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 10%;
 }
 
 /*========== BUTTONS ==========*/
-.button{
-  display: inline-block;
-  /* background-color: var(--first-color); */
-  border: var(--first-color) solid 1px;
-  color: var(--first-color);
-  padding: .75rem 1rem;
-  border-radius: .5rem;
-  transition: .3s;
+.button {
+    display: inline-block;
+    border: #069c54 solid 1px;
+    color: #069c54;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
 }
 
-.button:hover{
-  background-color: var(--first-color-alt);
-  color: white;
+.button:hover {
+    background-color: #048654;
+    color: white;
+}
+
+.about__description {
+    margin-bottom: 1.5rem;
+}
+
+.about__img {
+    width: 280px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+.services__container,
+.menu__container {
+    margin-top: var(--mb-6);
+}
+
+.menu__container {
+    grid-template-columns: repeat(3, 210px);
+    column-gap: 4rem;
+}
+.menu__content {
+    padding: 1.5rem;
+}
+.menu__img {
+    width: 130px;
+}
+/*========== SERVICES ==========*/
+.services__container {
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content {
+    text-align: center;
+}
+
+.services__img {
+    width: 64px;
+    height: 64px;
+    fill: #069c54;
+    margin-bottom: 1rem;
+}
+
+.services__title {
+    font-size: 1rem;
+    color: #4f4e4e;
+    margin-bottom: 0.5rem;
+}
+
+.services__description {
+    padding: 0 1.5rem;
+}
+
+/*========== MENU ==========*/
+.menu__container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin: 0 30%;
+}
+
+.menu__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px 1px rgba(3, 74, 40, 0.15);
+    padding: 1.5rem 0.5rem 0.5rem 0.75rem;
+}
+
+.menu__img {
+    max-width: 100px;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.menu__name,
+.menu__preci {
+    font-weight: 600;
+    color: #4f4e4e;
+}
+
+.menu__name {
+    font-size: 0.938rem;
+    text-align: center;
+}
+
+.menu__detail,
+.menu__preci {
+    font-size: 0.813rem;
+    text-align: center;
+}
+
+.menu__detail {
+    margin-bottom: 0.5rem;
+}
+
+.menu__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 0.625rem 0.813rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
+
+/* ======CONTACT====== */
+.contact__container {
+    align-items: center;
+}
+.contact__button {
+    justify-self: center;
+}
+
+.contact__description {
+    margin-bottom: 1.5rem;
 }
 
 /*=========responsive design for tab=========*/
-@media screen and (min-width: 769px) and (max-width: 1279px){
-.home__container{
-  height: 100vh;
-  justify-items: center;
-}
-.home__container {
-  height: 640px;
-}
-.home__title{
-  font-size: 4rem;
-}
-.home__subtitle{
-  font-size: 2.25rem;
-}
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .home__container,
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home__container {
+        height: 100vh;
+        justify-items: center;
+    }
+    .home__container {
+        height: calc(100vh - 3rem);
+        align-content: center;
+    }
+    .home__container {
+        height: 640px;
+    }
+    .home__data {
+      text-align: initial;
+    }
+    .home__title {
+        font-size: 4rem;
+    }
+    .home__subtitle {
+        font-size: 2.25rem;
+    }
+    .home__img {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .about__container {
+        column-gap: 7rem;
+    }
+    .about__img {
+        width: 380px;
+        order: -1;
+    }
+    .services__title {
+        font-size: 1.25rem;
+    }
+    .menu__container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+    }
+    .menu__name {
+        font-size: 1rem;
+    }
+    .menu__detail,
+    .menu__preci {
+        font-size: 0.875rem;
+    }
+    .contact__container {
+        grid-template-columns: 1.75fr 1fr;
+        text-align: center;
+    }
+    .contact__button {
+        margin-top: 20%;
+    }
 }
 
 /*=========responsive design for desktop=========*/
-@media screen and (min-width: 1280px){
-  .home__container{
-    height: 100vh;
-    justify-items: center;
-  }
-  .home__img{
-    width: 500px;
-  }
-  .home__title{
-    font-size: 4rem;
-  }
-  .home__subtitle{
-    font-size: 2.25rem;
-  }
+@media screen and (min-width: 1280px) {
+    .home__container,
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home__container {
+        height: 100vh;
+        justify-items: center;
+    }
+    .home__container {
+        height: calc(100vh - 3rem);
+        align-content: center;
+    }
+    .home__data {
+      text-align: initial;
+    }
+    .home__img {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .home__title {
+        font-size: 4rem;
+    }
+    .home__subtitle {
+        font-size: 2.25rem;
+    }
+    .about__container {
+        column-gap: 7rem;
+    }
+    .about__img {
+        width: 380px;
+        order: -1;
+    }
+    .services__title {
+        font-size: 1.25rem;
+    }
+    .menu__container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin: 0;
+    }
+    .menu__img {
+        transition: transform 0.2s;
+    }
+    .menu__img:hover {
+        -ms-transform: scale(1.4); /* IE 9 */
+        -webkit-transform: scale(1.4); /* Safari 3-8 */
+        transform: scale(1.4);
+    }
+    .menu__name {
+        font-size: 1rem;
+    }
+    .menu__detail,
+    .menu__preci {
+        font-size: 0.875rem;
+    }
+    .contact__container {
+        grid-template-columns: 1.75fr 1fr;
+        text-align: center;
+    }
+    .contact__button {
+        margin-top: 20%;
+    }
 }
