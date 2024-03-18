@@ -1,49 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-
-:root {
-  --header-height: 3rem;
-
-  /*========== Colors ==========*/
-  --first-color: #069C54;
-  --first-color-alt: #048654;
-  --title-color: #4f4e4e;
-  /* --text-color: #707070; */
-  --text-color: #312f2f;
-  --text-color-light: #A6A6A6;
-  --body-color: #FBFEFD;
-  --container-color: #FFFFFF;
-  --footer-color: #b8d8c2;
-  --footer-color-alt: #f5f5f5;
-
-  /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-  /*========== Margenes ==========*/
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
 /*========== BASE ==========*/
 *,::before,::after{
   box-sizing: border-box;
@@ -82,7 +39,7 @@ img{
 
 /*========== CLASS CSS ==========*/
 .section{
-  padding: 4rem 0 2rem;
+  padding: 3.5rem 0 2rem;
 }
 
 .section-title, .section-subtitle{
@@ -127,7 +84,7 @@ img{
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
-  /* height: var(--header-height); */
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,12 +229,9 @@ footer {
 
   /* =======Footer===== */
   .footer__container{
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
   }
-  /* .footer__content:not(:first-child):not(:nth-child(3)){
-    margin-left: 20%;
-  } */
   .footer__description{
     font-size: .875rem;
   }
@@ -299,6 +253,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
   .section-title{
     font-size: 2.25;
   }
