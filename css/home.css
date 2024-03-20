@@ -43,7 +43,7 @@
 }
 
 #home {
-    background-image: url("/img/hero_img.jpg");
+    background-image: url("../img/hero_img.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
