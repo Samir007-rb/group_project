@@ -27,30 +27,27 @@
     color: #fff;
 }
 
-
-.contact .content p {
-    font-weight: 300;
-    font-size: 26;
-    color: #444
-}
-
+/* provide overall webpage padding of 1 em */
 .container {
     padding: 1em;
 }
 
-.contactInfoAndForm {
+/* give only padding to top for both contact info and contact form */
+.contact-info-form {
     padding-top: 1em;
 }
 
-.container .contactInfo .box {
+/* for contact info  */
+/* gives padding, margin and make the elements center */
+.container .contact-info .box {
     padding-top: 5%;
     margin: 0 10%;
-    /* row */
     display: flex;
     justify-content: center;
 }
 
-.container .contactInfo .box .icon {
+/* gives background, radius and other style to the icon  */
+.container .contact-info .box .icon {
     min-width: 60px;
     height: 60px;
     background: #069c54;
@@ -61,17 +58,19 @@
     /* vertical center */
     align-items: center;
     border-radius: 50%;
-    font-size: 20px;
 }
 
-.container .contactInfo .box .text {
+/* gives certain width to text to maintain alignment property as text can varies acc to their content */
+.container .contact-info .box .text {
     width: 50%;
     margin-left: 20px;
     font-size: 16px;
     font-weight: 300;
 }
 
+/* styles for contact form */
 .contact-form {
+    margin: 3em 0;
     padding: 3em;
     border-radius: 4%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -87,6 +86,7 @@ label {
     font-weight: bold;
 }
 
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -97,10 +97,21 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea {
-    height: 150px;
+/* only apply when the textbox are focused */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
+textarea {
+    height: 150px;
+    /* resize property none protect the textarea from expanding the given width  and height*/
+    resize: none;
+}
+
+/* form button style  */
 input[type="submit"] {
     background-color: #069c54;
     color: #fff;
@@ -115,10 +126,7 @@ input[type="submit"]:hover {
     background-color: #069c54;
 }
 
-
-
-
-
+/* provide full width to the location google map */
 .location-map {
     width: 100%;
 }
@@ -130,73 +138,72 @@ input[type="submit"]:hover {
 
 
 /* Tablet Styles */
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
-
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    /* gives left and right padding to 30px for content  */
     .contact .content {
         padding: 0 30px;
     }
-
-    .contactInfoAndForm {
+/* used display flex to show both contact info and contact form horizontally in row */
+    .contact-info-form {
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
     }
 
-    .container .contactInfo {
-        width: 50%;
-    }
-
-    .container .contactInfo .box {
+    /* only give padding to top of box for contact info items*/
+    .container .contact-info .box {
         padding-top: 50px;
         margin: 0;
     }
 
-    .container .contactInfo .box .text {
+    /* gives full width to the contents of contact info */
+    .container .contact-info .box .text {
         width: 100%;
     }
 
-    #address {
+    /* #opening-hour {
         padding-top: 0;
-    }
+    } */
 
+    /* provide min width so that form can still remain to certain size when the screen size is minimized */
     .contact-form {
-        width: 50%;
+       min-width: 50%;
     }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1280px) {
+
+
     .container {
-        max-width: 60%;
         margin: 0 auto;
         padding: 0;
     }
 
+    /* provide half screen width to the contact form */
     .contact-form {
-        width: 50;
+        width: 50%;
     }
-
+/* only provide padding to bottom of form heading to give space after a header  */
     .contact-form h2 {
         padding-bottom: 1em;
     }
 
-    .contactInfoAndForm {
+    /* display flex gives horizontal row to both contact info and contact form for desktop view */
+    .contact-info-form {
         display: flex;
         justify-content: space-between;
         padding-top: 4em;
     }
-
-    .contactInfo {
+ 
+    /* provide half screen size to the contact info */
+    .contact-info {
         width: 50%;
     }
 
-    .container .contactInfo .box {
+    /* provide no margin to the item in contact info and alignment is done from start of the item size */
+    .container .contact-info .box {
         padding-top: 50px;
         margin: 0;
         justify-content: flex-start;
-    }
-
-    .contact-form {
-        width: 50%;
     }
 }
