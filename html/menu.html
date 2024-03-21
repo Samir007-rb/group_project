@@ -1,57 +1,17 @@
+<!-- Programmer: Pratina Gopali
+Date: March 13, 2024 -->
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!--======== favicon======= -->
-      <link rel="icon" href="../img/favicon.png" type="image/png" />
-      <!-- title of the website -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--======== Favicon ======= -->
+      <link rel="icon" href="img/favicon.png" type="image/png">
+      <!-- Title of the webpage -->
       <title>Menu | Himalayan Delights</title>
       <!--========== CSS ==========-->
-      <link rel="stylesheet" href="../css/style.css" />
-      <style>
-         #page-header {
-         background-image: url('../img/menu-banner.jpg');
-         background-size: cover;
-         background-position: center;
-         max-width: 100%;
-         color: #fff;
-         padding: 4.1em 0;
-         text-align: center;
-         position: relative;
-         }
-
-         #page-header::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background-color: rgba(0, 0, 0, 0.5);
-         z-index: -1;
-         mix-blend-mode: multiply;
-         }
-
-         .page-title {
-         font-size: 1.5em;
-         font-weight: bold;
-         padding: 1em 0;
-         color: #fff;
-         }
-         
-         @media screen and (min-width: 768px) {
-         .page-title {
-         font-size: 2em;
-         }
-         }
-         .menu-img img{
-         max-width: 100%;
-         }
-         .menu-content{
-         text-align: center;
-         }
-      </style>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/menu.css">
    </head>
    <body>
       <!--========== HEADER ==========-->
@@ -60,15 +20,15 @@
          <nav class="nav bd-container">
             <!-- ====== Logo of the website =======-->
             <a href="/html/index.html" class="nav__logo">
-            <img id="logo-img" src="/img/greenlogo.png" alt="logo" />
+            <img id="logo-img" src="/img/greenlogo.png" alt="logo">
             </a>
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="/html/index.html" class="nav__link">Home</a>
+                     <a href="/html/index.html" class="nav__link active-link">Home</a>
                   </li>
                   <li class="nav__item">
-                     <a href="/html/menu.html" class="nav__link active-link">Menu</a>
+                     <a href="/html/menu.html" class="nav__link">Menu</a>
                   </li>
                   <li class="nav__item">
                      <a href="/html/about.html" class="nav__link">About</a>
@@ -87,121 +47,170 @@
          </nav>
       </header>
       <section id="page-header">
+         <!--===== Page header section =====-->
          <div class="page-title">
+            Menu Offerings
          </div>
       </section>
-      <main class="l-main menu-content">
-         <br>
+      <main class="l-main menu-content" style="margin-bottom: 4em;">
+         <!--========== MENU ==========-->
+         <br><!-- Empty line for spacing -->
+         <!-- Heading for appetizers -->
          <h2>Appetizers</h2>
-         <br>
-         <table cellpadding="10" cellspacing="0" style="margin: 0 auto; width: 80%;" border="1">
-            <tr>
-               <th>Image</th>
-               <th>Name</th>
-               <th>Description</th>
-               <th>Price</th>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/momo.jpg" alt="Momo"></td>
-               <td>Momos (Steamed or Fried)</td>
-               <td>Nepali dumplings filled with vegetables, chicken, or buff (water buffalo) served with a selection of dipping sauces.</td>
-               <td>$8.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/panipuri.png" alt="Pani Puri"></td>
-               <td>Panipuri</td>
-               <td>Hollow puris filled with tangy tamarind water, potatoes, and chickpeas, a savory delight.</td>
-               <td>$7.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/chatpatey.png" alt="Chatpatey"></td>
-               <td>Chatpatey</td>
-               <td>A Nepali snack with crunchy mix of lentils, puffed rice, veggies, and tangy spices.</td>
-               <td>$4.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/chicken-sekuwa.png" alt="Chicken Sekuwa"></td>
-               <td>Sekuwa</td>
-               <td>Marinated and grilled bite-sized pieces of chicken, lamb, or goat.</td>
-               <td>$12.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/samosa.png" alt="Samosa"></td>
-               <td>Samosa</td>
-               <td>Crispy fried or baked pastries filled with spiced potatoes and peas.</td>
-               <td>$5.99</td>
-            </tr>
-         </table>
-         <br>
+         <!-- Card elements displaying images, descriptions, and prices for each appetizer item -->
+         <div class="card">
+            <!-- Image of the appetizer -->
+            <img src="img/menu/momo.png" alt="Momos">
+            <div class="card-content">
+               <!-- Title of the appetizer -->
+               <h3>Momos</h3>
+               <!-- Description of the appetizer -->
+               <p>Steamed dumplings filled with vegetables or meat, served with a dipping sauce.</p>
+               <!-- Price of the appetizer -->
+               <p class="price">$10.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the appetizer -->
+            <img src="img/menu/panipuri.png" alt="Panipuri">
+            <div class="card-content">
+               <!-- Title of the appetizer -->
+               <h3>Panipuri</h3>
+               <!-- Description of the appetizer -->
+               <p>Hollow puris filled with tangy tamarind water, potatoes, and chickpeas, a savory delight.</p>
+               <!-- Price of the appetizer -->
+               <p class="price">$7.49</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the appetizer -->
+            <img src="img/menu/chicken-sekuwa.png" alt="Chicken Sekuwa">
+            <div class="card-content">
+               <!-- Title of the appetizer -->
+               <h3>Chicken Sekuwa</h3>
+               <!-- Description of the appetizer -->
+               <p>Marinated and grilled bite-sized pieces of chicken, lamb, or goat.	</p>
+               <!-- Price of the appetizer -->
+               <p class="price">$7.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the appetizer -->
+            <img src="img/menu/samosa.png" alt="Samosa">
+            <div class="card-content">
+               <!-- Title of the appetizer -->
+               <h3>Samosa</h3>
+               <!-- Description of the appetizer -->
+               <p>Crispy fried or baked pastries filled with spiced potatoes and peas.</p>
+               <!-- Price of the appetizer -->
+               <p class="price">$5.99</p>
+            </div>
+         </div>
+         <br><!-- Empty line for spacing -->
+         <!-- Heading for main courses -->
          <h2>Main Courses</h2>
+         <!-- Card elements displaying images, descriptions, and prices for each main course item -->
+         <div class="card">
+            <!-- Image of the main course -->
+            <img src="img/menu/dal-bhat.png" alt="Dal Bhat Tarkari">
+            <div class="card-content">
+               <!-- Title of the main course -->
+               <h3>Dal Bhat Tarkari</h3>
+               <!-- Description of the main course -->
+               <p>Traditional Nepalese dish consisting of lentil soup (dal) with rice (bhat).</p>
+               <!-- Price of the main course -->
+               <p class="price">$16.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the main course -->
+            <img src="img/menu/thukpa.png" alt="Thukpa">
+            <div class="card-content">
+               <!-- Title of the main course -->
+               <h3>Thukpa</h3>
+               <!-- Description of the main course -->
+               <p>Hearty noodle soup with vegetables or meat, seasoned with herbs and spices.</p>
+               <!-- Price of the main course -->
+               <p class="price">$14.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the main course -->
+            <img src="img/menu/samaybaji.png" alt="Samaybaji">
+            <div class="card-content">
+               <!-- Title of the main course -->
+               <h3>Newari Khaja Set</h3>
+               <!-- Description of the main course -->
+               <p>Assorted Newari platter with beaten rice, buffalo meat, and pickles.</p>
+               <!-- Price of the main course -->
+               <p class="price">$18.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the main course -->
+            <img src="img/menu/chicken-chowmein.png" alt="Chicken Chowmein">
+            <div class="card-content">
+               <!-- Title of the main course -->
+               <h3>Chicken Chowmein</h3>
+               <!-- Description of the main course -->
+               <p>Stir-fried noodles with tender chicken, bursting with authentic flavors.</p>
+               <!-- Price of the main course -->
+               <p class="price">$17.99</p>
+            </div>
+         </div>
+         <!-- Empty line for spacing -->
          <br>
-         <table cellpadding="10" cellspacing="0" style="margin: 0 auto; width: 80%;"  border="1">
-            <tr>
-               <th>Image</th>
-               <th>Name</th>
-               <th>Description</th>
-               <th>Price</th>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/dal-bhat.png" alt="Dal Bhat"></td>
-               <td>Dal Bhat Tarkari</td>
-               <td>Nepal's national dish featuring lentil soup (dal), steamed rice (bhat), various vegetable curries (tarkari), and yogurt (dahi). Choose your protein: chicken, goat, or vegetarian.</td>
-               <td>$14.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/thukpa.png" alt="Thukpa"></td>
-               <td>Thukpa</td>
-               <td>Nepali noodle soup with vegetables and meat (chicken, lamb, or vegetarian options available).</td>
-               <td>$12.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/chicken-chowmein.png" alt="Chicken Chowmein"></td>
-               <td>Chicken Chowmein</td>
-               <td>Stir-fried noodles with tender chicken, bursting with authentic flavors.</td>
-               <td>$16.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/samaybaji.png" alt="Samaybaji"></td>
-               <td>Newari Khaja Set</td>
-               <td>Assorted Newari platter with beaten rice, buffalo meat, and pickles.</td>
-               <td>$15.99</td>
-            </tr>
-         </table>
-         <br>
+         <!-- Heading for desserts -->
          <h2>Desserts</h2>
-         <br>
-         <table cellpadding="10" cellspacing="0" style="margin: 0 auto; width: 80%;"  border="1">
-            <tr>
-               <th>Image</th>
-               <th>Name</th>
-               <th>Description</th>
-               <th>Price</th>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/juju.png" alt="Juju Dhau"></td>
-               <td>Juju Dhau</td>
-               <td>Thick, creamy yogurt flavored with honey or jaggery.</td>
-               <td>$4.99</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/yomari.png" alt="Yomari"></td>
-               <td>Yomari</td>
-               <td>Sweet rice dumplings filled with a mixture of jaggery and black lentil paste, traditionally eaten during festivals.</td>
-               <td>$3.50 (each)</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/sel-roti.png" alt="Sel Roti"></td>
-               <td>Sel Roti</td>
-               <td>A traditional Nepalese homemade, sweet, ring-shaped rice bread/doughnut.</td>
-               <td>$4.99(Each)</td>
-            </tr>
-            <tr>
-               <td class="menu-img"><img src="../img/menu/kheer.png" alt="Kheer"></td>
-               <td>Kheer</td>
-               <td>Creamy, aromatic rice pudding delicately flavored with cardamom and nuts.</td>
-               <td>$4.99(Each)</td>
-            </tr>
-         </table>
+         <!-- Card elements displaying images, descriptions, and prices for each dessert item -->
+         <div class="card">
+            <!-- Image of the dessert -->
+            <img src="img/menu/juju.png" alt="Juju Dhau">
+            <div class="card-content">
+               <!-- Title of the dessert -->
+               <h3>Juju Dhau</h3>
+               <!-- Description of the dessert -->
+               <p>Renowned Nepalese yogurt, rich, creamy, and delightfully sweet.</p>
+               <!-- Price of the dessert -->
+               <p class="price">$5.99</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the dessert -->
+            <img src="img/menu/yomari.png" alt="Yomari">
+            <div class="card-content">
+               <!-- Title of the dessert -->
+               <h3>Yomari</h3>
+               <!-- Description of the dessert -->
+               <p>Sweet rice dumplings with jaggery-lentil filling, a festive delight.</p>
+               <!-- Price of the dessert -->
+               <p class="price">$4.50(Each)</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the dessert -->
+            <img src="img/menu/sel-roti.png" alt="Sel Roti">
+            <div class="card-content">
+               <!-- Title of the dessert -->
+               <h3>Sel Roti</h3>
+               <!-- Description of the dessert -->
+               <p>A traditional Nepalese homemade, sweet, ring-shaped rice bread/doughnut.</p>
+               <!-- Price of the dessert -->
+               <p class="price">$5.49(Each)</p>
+            </div>
+         </div>
+         <div class="card">
+            <!-- Image of the dessert -->
+            <img src="img/menu/kheer.png" alt="Kheer">
+            <div class="card-content">
+               <!-- Title of the dessert -->
+               <h3>Kheer</h3>
+               <!-- Description of the dessert -->
+               <p>Creamy, aromatic rice pudding delicately flavored with cardamom and nuts.</p>
+               <!-- Price of the dessert -->
+               <p class="price">$6.99</p>
+            </div>
+         </div>
          <br>
       </main>
       <!--========== FOOTER ==========-->
@@ -209,14 +218,14 @@
          <div class="section bd-container">
             <div class="footer__container bd-grid">
                <div class="footer__content">
-                  <a href="index.html">
-                  <img id="footer-logo" src="../img/flogo.png" alt="logo" />
+                  <a href="/html/index.html">
+                  <img id="footer-logo" src="/img/flogo.png" alt="logo">
                   </a>
                   <span class="footer__description">From hearty momos to aromatic curries, experience the
                   flavors of Nepal and enjoy authentic Nepali
                   cuisine.</span>
                   <div>
-                     <a href="https://www.facebook.com" class="footer__social">
+                     <a target="_blank" href="https://www.facebook.com" class="footer__social">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">
                            <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
                            <path fill="#fff"
@@ -329,10 +338,10 @@
                <div class="footer__content">
                   <h3 class="footer__title">Information</h3>
                   <ul>
-                     <li><a href="#" class="footer__link">Menu</a></li>
+                     <li><a href="/html/menu.html" class="footer__link">Menu</a></li>
                      <li><a href="#" class="footer__link">Gallery</a></li>
-                     <li><a href="#" class="footer__link">About us</a></li>
-                     <li><a href="#" class="footer__link">Contact us</a></li>
+                     <li><a href="/html/about.html" class="footer__link">About us</a></li>
+                     <li><a href="/html/contact-us.html" class="footer__link">Contact us</a></li>
                   </ul>
                </div>
                <div class="footer__content">
@@ -375,6 +384,6 @@
          </div>
       </footer>
       <!--========== MAIN JS ==========-->
-      <script src="../js/main.js"></script>
+      <script src="js/main.js"></script>
    </body>
 </html>
