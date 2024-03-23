@@ -1,126 +1,132 @@
-  /* Card Styles - Mobile First */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .card {
-    width: 100%; /* Full width for mobile */
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    margin: 10px 0; /* Adjust margin for mobile view */
-    display: inline-block; /* Remove for flexbox approach (optional) */
-    vertical-align: top;
-    box-sizing: border-box;
-    overflow: hidden;
-    border: 1px solid #ddd;
-  }
-  
-  .card img {
-    max-width: 60%;
-    height: auto; /* Maintain image aspect ratio */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: #ffffff;
-  }
-  
-  .card-content {
-    padding: 10px;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-    font-size: 0.9rem; /* Adjust for mobile */
-  }
-  
-  /* Media Query for Tablets (max-width: 768px) */
-  @media (min-width: 485px) {
-    .card {
-      margin: 10px; /* Adjust margin for tablets (optional) */
-      width: 45%;
-    }
+/* Styles for images within the menu */
+.menu-img img {
+	max-width: 100%; /* Ensure images don't exceed container width */
+}
 
-    .card img{
-        max-width: 90%;
-    }
-  }
-  
-  /* Media Query for Tablets (max-width: 768px) */
-  @media (min-width: 768px) {
-    .card {
-      margin: 10px; /* Adjust margin for tablets (optional) */
-      width: 30%;
-    }
+/* Styles for the menu content */
+.menu-content {
+	text-align: center; /* Center-align text within the menu content */
+}
 
-    .card img{
-        max-width: 100%;
-    }
-  
-    .price {
-      font-size: 1rem; /* Adjust for tablets */
-    }
-  }
-  
-  /* Media Query for Desktops (min-width: 1200px) */
-  @media (min-width: 1200px) {
-    .card {
-      width: 22%; /* Adjust width for desktops (4 cards per row) */
-    }
+/* Heading styles */
+h2 {
+	margin: 0.5em 0; /* Set margin for heading elements */
+	color: #222; /* Set color for headings */
+    text-decoration: underline;
+}
 
-    .price {
-      font-size: 1.1rem; /* Adjust for desktops (optional) */
-    }
-  }
+/* Styles for headings and prices */
+h3,
+.price {
+	color: #222; /* Set color for heading and price elements */
+}
 
-  #page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/menu-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    color: #fff;
-    padding: 4.1em 0;
-    text-align: center;
-    position: relative;
-    margin-top: 4.5em;
-    }
-    #page-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    mix-blend-mode: multiply;
-    }
-    .page-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 1em 0;
-    color: #fff;
-    }
-    @media screen and (min-width: 768px) {
-    .page-title {
-    font-size: 2em;
-    }
-    }
-    .menu-img img{
-    max-width: 100%;
-    }
-    .menu-content{
-    text-align: center;
-    }
-    h2{
-    margin: 0.5em 0;
-    color:#222;
-    }
-    h3, .price{
-    color: #222;
-    }
-    p{
-    color: #444444;
-    }
+/* Paragraph text styles */
+p {
+	color: #444444; /* Set color for paragraph text */
+}
+
+/* Styles for the page header */
+#page-header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/menu-banner.jpg');
+	background-size: cover;
+	background-position: center;
+	max-width: 100%;
+	color: #fff;
+	padding: 4.1em 0;
+	text-align: center;
+	position: relative;
+	margin-top: 4.5em;
+}
+
+/* Overlay effect for page header */
+#page-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+	mix-blend-mode: multiply;
+}
+
+/* Page title styles */
+.page-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1em 0;
+	color: #fff;
+}
+
+/* Card styles */
+.card {
+	width: 100%;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	margin: 10px 0;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+/* Styles for images within cards */
+.card img {
+	max-width: 60%;
+	height: auto;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+/* Styles for card content */
+.card-content {
+	padding: 10px;
+}
+
+/* Price styles */
+.price {
+	font-weight: bold;
+	color: #333;
+	margin-top: 10px;
+	font-size: 0.9rem;
+}
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (min-width: 768px) {
+    /* Increase font size for page title */
+	.page-title {
+		font-size: 2em;
+	}
+
+	/* Adjust card styles for tablets */
+	.card {
+		margin: 10px;
+		width: 30%;
+	}
+
+	/* Adjust image styles for tablets */
+	.card img {
+		max-width: 100%;
+	}
+
+	/* Adjust price font size for tablets */
+	.price {
+		font-size: 1rem;
+	}
+}
+
+/* Media Query for Desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+	/* Adjust card width for desktops */
+	.card {
+		width: 22%;
+	}
+
+	/* Increase price font size for desktops */
+	.price {
+		font-size: 1.1rem;
+	}
+}
