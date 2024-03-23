@@ -100,9 +100,9 @@ textarea {
 /* only apply when the textbox are focused */
 input[type="text"]:focus,
 input[type="email"]:focus,
-textarea:focus{
+textarea:focus {
     outline: none;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 textarea {
@@ -139,11 +139,13 @@ input[type="submit"]:hover {
 
 /* Tablet Styles */
 @media screen and (min-width: 769px) and (max-width: 1280px) {
+
     /* gives left and right padding to 30px for content  */
     .contact .content {
         padding: 0 30px;
     }
-/* used display flex to show both contact info and contact form horizontally in row */
+
+    /* used display flex to show both contact info and contact form horizontally in row */
     .contact-info-form {
         display: flex;
         align-items: center;
@@ -166,7 +168,7 @@ input[type="submit"]:hover {
 
     /* provide min width so that form can still remain to certain size when the screen size is minimized */
     .contact-form {
-       min-width: 50%;
+        min-width: 50%;
     }
 }
 
@@ -183,7 +185,8 @@ input[type="submit"]:hover {
     .contact-form {
         width: 50%;
     }
-/* only provide padding to bottom of form heading to give space after a header  */
+
+    /* only provide padding to bottom of form heading to give space after a header  */
     .contact-form h2 {
         padding-bottom: 1em;
     }
@@ -194,7 +197,7 @@ input[type="submit"]:hover {
         justify-content: space-between;
         padding-top: 4em;
     }
- 
+
     /* provide half screen size to the contact info */
     .contact-info {
         width: 50%;
