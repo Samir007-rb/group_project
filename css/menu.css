@@ -1,29 +1,35 @@
 /* Styles for images within the menu */
 .menu-img img {
-	max-width: 100%; /* Ensure images don't exceed container width */
+	max-width: 100%;
+	/* Ensure images don't exceed container width */
 }
 
 /* Styles for the menu content */
 .menu-content {
-	text-align: center; /* Center-align text within the menu content */
+	text-align: center;
+	/* Center-align text within the menu content */
 }
 
 /* Heading styles */
 h2 {
-	margin: 0.5em 0; /* Set margin for heading elements */
-	color: #222; /* Set color for headings */
-    text-decoration: underline;
+	margin: 0.5em 0;
+	/* Set margin for heading elements */
+	color: #222;
+	/* Set color for headings */
+	text-decoration: underline;
 }
 
 /* Styles for headings and prices */
 h3,
 .price {
-	color: #222; /* Set color for heading and price elements */
+	color: #222;
+	/* Set color for heading and price elements */
 }
 
 /* Paragraph text styles */
 p {
-	color: #444444; /* Set color for paragraph text */
+	color: #444444;
+	/* Set color for paragraph text */
 }
 
 /* Styles for the page header */
@@ -60,17 +66,20 @@ p {
 	color: #fff;
 }
 
+.menu-card {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 20px;
+}
+
 /* Card styles */
 .card {
-	width: 100%;
 	background-color: #f9f9f9;
-	border-radius: 8px;
-	margin: 10px 0;
-	display: inline-block;
-	vertical-align: top;
-	box-sizing: border-box;
-	overflow: hidden;
-	border: 1px solid #ddd;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styles for images within cards */
@@ -96,15 +105,10 @@ p {
 
 /* Media Query for Tablets (max-width: 768px) */
 @media (min-width: 768px) {
-    /* Increase font size for page title */
+
+	/* Increase font size for page title */
 	.page-title {
 		font-size: 2em;
-	}
-
-	/* Adjust card styles for tablets */
-	.card {
-		margin: 10px;
-		width: 30%;
 	}
 
 	/* Adjust image styles for tablets */
@@ -120,10 +124,6 @@ p {
 
 /* Media Query for Desktops (min-width: 1200px) */
 @media (min-width: 1200px) {
-	/* Adjust card width for desktops */
-	.card {
-		width: 22%;
-	}
 
 	/* Increase price font size for desktops */
 	.price {
