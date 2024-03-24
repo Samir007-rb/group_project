@@ -8,6 +8,7 @@
     color: #fff;
     text-align: center;
     position: relative;
+    margin-top: 4.1em;
 }
 
 #page-header::before {
@@ -27,21 +28,6 @@
     font-weight: bold;
     padding: 5em 0 2.5em 0;
     color: #fff;
-}
-
-.container {
-    padding: 1em;
-}
-
-#about-content {
-    padding-top: 1em;
-}
-
-.about-heading {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 2% 0;
 }
 
 .about-sub-content {
@@ -96,6 +82,7 @@ a {
 
 .info-text {
     border-left: 10px solid #009E60;
+    margin: 2em 0;
 }
 
 .info-text p {
@@ -109,6 +96,7 @@ a {
 .about-row-2 {
     display: flex;
     flex-direction: column;
+    margin: 3em 0;
 }
 
 .about-row .about-column-left,
@@ -134,8 +122,9 @@ a {
 
 .about-row-2 .about-column-right {
     order: 1;
-    padding-top: 3%;
 }
+
+
 
 
 /* Tablet View */
@@ -147,6 +136,7 @@ a {
     .about-row,
     .about-row-2 {
         flex-direction: row;
+        align-items: center;
     }
 
     .about-row .about-column-left,
@@ -179,13 +169,13 @@ a {
         font-size: 2em;
     }
 
-    .about-column-right {
-        margin-left: 1.5em;
+    .about-row .about-column-right {
+        display: flex;
+        justify-content: center;
     }
 
     .about-image-1 {
-        height: 90%;
-        width: 100%;
+        width: 80%;
         border-radius: 1em;
     }
 
@@ -201,5 +191,14 @@ a {
 
     .parallax-content h2 {
         font-size: 2.5em;
+    }
+
+    /* .about-row,
+    .about-row-2 {
+        margin: 3em 0;
+    } */
+
+    .about-row {
+        padding-bottom: 3em;
     }
 }
