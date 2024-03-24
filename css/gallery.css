@@ -1,0 +1,211 @@
+/* Gallery */
+.cont-title{    
+  
+    background: url('../img/gallerybg2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 79vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.wrapper{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    
+
+}
+
+.parent{
+    width: 56%;
+    margin: 20px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(40, 40, 40, 0.1);
+    border-radius: 7px;
+}
+.parent:hover .child{
+    transform: scale(1.2);
+}
+.gallery-img{
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
+  }
+
+.child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+    transition: all 1.1s;
+}
+.photo{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .photo::after{
+    content: '';
+    position: absolute;
+
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.4);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    
+
+  }
+
+  .child:is(:hover, :focus) .photo::after{
+    opacity: 1;
+
+  }
+  .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
+    
+  }
+  .child:hover .caption{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*=========responsive design for tab=========*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .cont-title{
+  
+        background: url('../img/gallerybg2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 79vh;
+        background-position: center;
+        background-attachment: fixed;
+  }
+    .parent{
+        width: 43%;
+        margin: 20px;
+        height: 240px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(40, 40, 40, 0.1);
+    
+    }
+}
+
+/*=========responsive design for desktop=========*/
+@media screen and (min-width: 1280px) {
+    .main-title{
+        padding: 5%;
+        font-size: 1em;
+        color: #069c54;
+        font-weight: 100;
+    }
+    .cont-title{       
+        background: url('../img/gallerybg2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+
+        background-attachment: fixed;
+  }
+  
+    .parent{
+       
+        width: 28%;
+        margin: 20px;
+        height: 270px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 4px 6px 7px rgba(40, 40, 40, 0.1);
+        border-radius: 7px;
+        
+    
+    }
+      .gallery-img{
+        width: 100%;
+        display: block;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: transform 1000ms;
+      }
+      .photo{
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        
+      }
+      .photo::after{
+        content: '';
+        position: absolute;
+    
+        width: 200%;
+        height: 200%;
+        background: rgba(0, 0, 0, 0.4);
+        transform-origin: center;
+        opacity: 0;
+        transform: scale(2);
+        
+    
+      }
+    
+      .child:is(:hover, :focus) .photo::after{
+        opacity: 1;
+    
+      }
+      .caption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: lighter;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 600ms, transform 600ms;
+        
+      }
+      .child:hover .caption{
+        visibility: visible;
+        opacity: 1;
+      }
+}
