@@ -47,19 +47,20 @@
         </nav>
     </header>
 
-    <main class="section">
+    <main>
         <section id="page-header">
             <!-- Page title -->
             <div class="page-title">
                 Contact Us
             </div>
         </section>
-        <div class="bd-container container">
+        <div class="bd-container">
             <!-- Contain both contact info and contact form  -->
             <div class="contact-info-form">
                 <!-- Title for contact form -->
                 <div class="contact-form-left">
                     <div class="content">
+                        <span class="section-subtitle">Get in Touch</span>
                         <p> Please fill out the form below and submit if you have any feedback or queries about our
                             service.
                         </p>
@@ -144,8 +145,7 @@
                 <div class="contact-form">
                     <form>
                         <!-- heading for form -->
-                        <h2>Send Message</h2>
-                        <br>
+                        <h2 class="section-title">Send Message</h2>
                         <form action="#" method="post">
                             <div class="form-group">
                                 <!-- Shows the label for form -->
@@ -164,15 +164,14 @@
                             </div>
                             <!-- Submit button which does nothing for now -->
                             <div class="form-group">
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Submit" class="button">
                             </div>
                         </form>
                 </div>
             </div>
             <div class="location-map">
                 <!-- heading for map -->
-                <h2>Find Us here</h2>
-                <br>
+                <h2 class="section-title">Find Us here</h2>
                 <!-- iframe used to load the map in webpage -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9557582979846!2d-79.335466!3d43.7737772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sca!4v1710703786898!5m2!1sen!2sca"
@@ -194,7 +193,7 @@
                         flavors of Nepal and enjoy authentic Nepali
                         cuisine.</span>
                     <div>
-                        <a href="https://www.facebook.com" class="footer__social">
+                        <a target="_blank" href="https://www.facebook.com" class="footer__social">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
                                 viewBox="0 0 48 48">
                                 <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
@@ -300,28 +299,28 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Services</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Delivery</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__text">Delivery</a></li>
+                        <li><a href="#" class="footer__text">Pricing</a></li>
+                        <li><a href="#" class="footer__text">Fast food</a></li>
                         <li>
-                            <a href="#" class="footer__link">Reserve your spot</a>
+                            <a href="#" class="footer__text">Reserve your spot</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__content">
                     <h3 class="footer__title">Information</h3>
                     <ul>
-                        <li><a href="../html/menu.html" class="footer__link">Menu</a></li>
-                        <li><a href="../html/gallery.html" class="footer__link">Gallery</a></li>
-                        <li><a href="../html/about.html" class="footer__link">About us</a></li>
-                        <li><a href="../html/contact-us.html" class="footer__link">Contact us</a></li>
+                        <li><a href="../html/menu.html" class="footer__text">Menu</a></li>
+                        <li><a href="../html/gallery.html" class="footer__text">Gallery</a></li>
+                        <li><a href="../html/about.html" class="footer__text">About us</a></li>
+                        <li><a href="../html/contact-us.html" class="footer__text">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer__content">
                     <h3 class="footer__title">Address</h3>
                     <ul>
                         <li>
-                            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px"
                                 viewBox="0 0 395.71 395.71" xml:space="preserve">
                                 <g>
@@ -331,19 +330,19 @@
                             c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" />
                                 </g>
                             </svg>
-                            <span>271 Yorkland Blvd, North York, ON</span>
+                            <span class="footer__text">271 Yorkland Blvd, North York, ON</span>
                         </li>
                         <li>
                             <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
-                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <a href="tel:9998887777" class="address_link">999 - 888 - 7777</a>
                         </li>
                         <li>
-                            <svg fill="#000000" width="13px" height="13px" viewBox="0 0 1920 1920"
+                            <svg fill="#fff" width="13px" height="13px" viewBox="0 0 1920 1920"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"

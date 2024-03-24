@@ -47,8 +47,10 @@ Date: March 19, 2024 */
 
 #home {
     background-image: url("../img/hero_img.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
     background-size: cover;
 
     /* Create the parallax scrolling effect */
@@ -68,10 +70,11 @@ Date: March 19, 2024 */
     color: white;
 }
 
-.home__title { 
+.home__title {
     margin-top: 3%;
     font-size: 2rem;
 }
+
 .home__subtitle {
     font-size: 1rem;
 }
@@ -85,6 +88,7 @@ Date: March 19, 2024 */
     border-radius: 0.5rem;
     justify-self: center;
 }
+
 .services__container,
 .menu__container {
     margin-top: var(--mb-6);
@@ -94,12 +98,15 @@ Date: March 19, 2024 */
     grid-template-columns: repeat(3, 210px);
     column-gap: 4rem;
 }
+
 .menu__content {
     padding: 1.5rem;
 }
+
 .menu__img {
     width: 130px;
 }
+
 /*========== SERVICES ==========*/
 .services__container {
     row-gap: 2.5rem;
@@ -185,6 +192,7 @@ Date: March 19, 2024 */
 .contact__container {
     align-items: center;
 }
+
 .contact__button {
     justify-self: center;
 }
@@ -195,60 +203,76 @@ Date: March 19, 2024 */
 
 /*=========responsive design for tab=========*/
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+
     .home__container,
     .about__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .home__container {
         height: 100vh;
         justify-items: center;
     }
+
     .home__container {
         height: calc(100vh - 3rem);
         align-content: center;
     }
+
     .home__container {
         height: 640px;
     }
+
     .home__data {
         text-align: initial;
         margin-left: 10%;
     }
+
     .home__title {
         font-size: 4rem;
     }
+
     .home__subtitle {
         font-size: 2.25rem;
     }
+
     .home__img {
         width: 90%;
         margin-bottom: 0;
     }
+
     .about__container {
         column-gap: 7rem;
     }
+
     .about__img {
         width: 380px;
         order: -1;
     }
+
     .services__title {
         font-size: 1.25rem;
     }
+
     .menu__container {
         grid-template-columns: repeat(3, 1fr);
         margin: 0;
     }
+
     .menu__name {
         font-size: 1rem;
     }
+
     .menu__detail,
     .menu__preci {
         font-size: 0.875rem;
     }
+
     .contact__container {
         grid-template-columns: 1.75fr 1fr;
         text-align: center;
     }
+
     .contact__button {
         margin-top: 20%;
     }
@@ -256,67 +280,87 @@ Date: March 19, 2024 */
 
 /*=========responsive design for desktop=========*/
 @media screen and (min-width: 1280px) {
+
     .home__container,
     .about__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .home__container {
         height: 100vh;
         justify-items: center;
     }
+
     .home__container {
         align-content: center;
     }
+
     .home__data {
         text-align: initial;
     }
+
     .home__img {
         width: 90%;
         margin-bottom: 0;
     }
+
     .home__title {
         font-size: 4rem;
     }
+
     .home__subtitle {
         font-size: 2.25rem;
     }
-    .home_button{
+
+    .home_button {
         border: 1.6px solid #069c54;
     }
+
     .about__container {
         column-gap: 7rem;
     }
+
     .about__img {
         width: 380px;
         order: -1;
     }
+
     .services__title {
         font-size: 1.25rem;
     }
+
     .menu__container {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         margin: 0;
     }
+
     .menu__img {
         transition: transform 0.2s;
     }
+
     .menu__img:hover {
-        -ms-transform: scale(1.4); /* IE 9 */
-        -webkit-transform: scale(1.4); /* Safari 3-8 */
+        -ms-transform: scale(1.4);
+        /* IE 9 */
+        -webkit-transform: scale(1.4);
+        /* Safari 3-8 */
         transform: scale(1.4);
     }
+
     .menu__name {
         font-size: 1rem;
     }
+
     .menu__detail,
     .menu__preci {
         font-size: 0.875rem;
     }
+
     .contact__container {
         grid-template-columns: 1.75fr 1fr;
         text-align: center;
     }
+
     .contact__button {
         margin-top: 20%;
     }

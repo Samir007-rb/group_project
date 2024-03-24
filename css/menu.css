@@ -42,7 +42,6 @@ p {
 	padding: 4.1em 0;
 	text-align: center;
 	position: relative;
-	margin-top: 4.5em;
 }
 
 /* Overlay effect for page header */
@@ -105,6 +104,10 @@ p {
 
 /* Media Query for Tablets (max-width: 768px) */
 @media (min-width: 768px) {
+
+	#page-header {
+		margin-top: 4.5em;
+	}
 
 	/* Increase font size for page title */
 	.page-title {
